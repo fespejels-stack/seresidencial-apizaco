@@ -1,0 +1,7 @@
+Activo oficial para web
+
+Archivo: logotipo-sra.png
+Origen: Logotipo institucional SRA aprobado.
+Uso: encabezado y pie de página.
+Optimización: redimensionado y comprimido para carga web.
+No sustituir sin control de versión.

@@ -1,0 +1,13 @@
+SERESIDENCIAL APIZACO — WEB v1.2 / SPRINT WEB-05.2
+
+PRUEBA LOCAL
+1. Extraiga el archivo ZIP.
+2. Abra index.html en Chrome.
+3. Compruebe encabezado, portada, botones y catálogo.
+
+PUBLICACIÓN
+Suba TODO el contenido de esta carpeta a la raíz del repositorio, sustituyendo la versión anterior.
+No suba solamente index.html: la carpeta assets es necesaria para cargar los estilos.
+
+NOTA
+La marca SRA visible en el encabezado es un espacio provisional para el logotipo definitivo.

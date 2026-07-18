@@ -1,0 +1,1 @@
+Iconos institucionales generados en WEB-05.5. No eliminar sin actualizar las referencias de index.html y site.webmanifest.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seresidencial-apizaco.f-espejel-s.workers.dev/sitemap.xml

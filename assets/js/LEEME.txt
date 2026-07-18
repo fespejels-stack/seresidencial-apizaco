@@ -1,0 +1,1 @@
+No se requiere JavaScript en la versión 1.1. Esta carpeta queda preparada para funciones futuras.
