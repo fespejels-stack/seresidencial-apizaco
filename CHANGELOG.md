@@ -1,3 +1,17 @@
+# Historial de cambios — SERESIDENCIAL WEB
+
+## [v1.6] — WEB-05.6
+
+### Optimización visual del Hero
+- Se equilibró la proporción entre el contenido principal y el panel lateral.
+- Se optimizó la altura del Hero para pantallas grandes, tabletas y móviles.
+- Se refinó la jerarquía tipográfica y la longitud de lectura del mensaje.
+- Se reforzó visualmente el bloque de llamadas a la acción.
+- Los compromisos de servicio ahora se presentan como distintivos discretos.
+- Se mejoró el acabado visual del panel de categorías sin cambiar su contenido.
+- Se añadieron detalles de profundidad y contraste respetando la identidad aprobada.
+- No se modificaron textos, servicios, enlaces ni funcionalidades existentes.
+
 # WEB-05.5.1 — Corrección de navegación del logotipo
 
 - Se trasladó el ancla `inicio` al encabezado completo.

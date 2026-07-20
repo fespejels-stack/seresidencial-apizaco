@@ -53,3 +53,10 @@ Corrección del enlace de marca: el destino `#inicio` se ubica en el encabezado 
 
 ### WEB-05.5.1 — Encabezado Inteligente
 El encabezado es fijo y adapta su altura al desplazamiento. El logotipo funciona como acceso permanente al inicio; Servicios, Contacto y teléfono permanecen disponibles durante toda la navegación.
+
+## WEB-05.6 — Optimización visual del Hero
+
+- Alcance limitado a la portada principal y su comportamiento responsivo.
+- Sin cambios de contenido, estructura funcional, enlaces o catálogo de servicios.
+- Base de publicación: versión WEB-05.5.1 aprobada y publicada.
+- Resultado esperado: mayor equilibrio visual, mejor lectura y presencia profesional en escritorio, tableta y móvil.

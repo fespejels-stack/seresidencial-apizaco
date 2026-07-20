@@ -448,3 +448,245 @@ footer { padding-block: 34px; background: var(--primary-dark); color: #fff; }
   .site-nav-shell .brand-name,
   .site-nav-shell .nav-links { transition: none; }
 }
+
+/* ==========================================================
+   15. WEB-05.6 · OPTIMIZACIÓN VISUAL DEL HERO
+   Objetivo: mejorar jerarquía, balance y adaptación sin
+   modificar los textos ni la estructura funcional del sitio.
+   ========================================================== */
+.hero {
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: var(--nav-height) 0 auto;
+  height: min(72vh, 680px);
+  background:
+    linear-gradient(112deg, transparent 0 54%, rgba(255,255,255,.035) 54% 64%, transparent 64%),
+    radial-gradient(ellipse at 67% 45%, rgba(84, 142, 196, .13), transparent 48%);
+  pointer-events: none;
+}
+
+.hero-content {
+  width: min(1240px, calc(100% - 40px));
+  min-height: clamp(610px, calc(100svh - var(--nav-height)), 790px);
+  padding-block: clamp(64px, 7vh, 92px) clamp(78px, 9vh, 112px);
+  grid-template-columns: minmax(0, 1.28fr) minmax(330px, .72fr);
+  gap: clamp(48px, 6vw, 92px);
+}
+
+.hero-copy {
+  position: relative;
+  max-width: 790px;
+}
+
+.hero-copy::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -36px -22px -42px -54px;
+  background: radial-gradient(ellipse at 38% 48%, rgba(16, 57, 96, .42), transparent 68%);
+  pointer-events: none;
+}
+
+.hero .eyebrow {
+  margin-bottom: 16px;
+  font-size: clamp(.78rem, .7vw, .9rem);
+  letter-spacing: .19em;
+}
+
+.hero h1 {
+  max-width: 10.9ch;
+  font-size: clamp(3.15rem, 5.55vw, 5.35rem);
+  line-height: .98;
+  text-wrap: balance;
+  text-shadow: 0 8px 30px rgba(0, 0, 0, .12);
+}
+
+.hero-text {
+  max-width: 61ch;
+  margin-top: 30px;
+  color: rgba(255,255,255,.86);
+  font-size: clamp(1.04rem, 1.35vw, 1.22rem);
+  line-height: 1.72;
+  text-wrap: pretty;
+}
+
+.hero-actions {
+  margin-top: 36px;
+  gap: 14px;
+}
+
+.hero-actions .button {
+  min-width: 190px;
+  min-height: 54px;
+  padding-inline: 24px;
+}
+
+.hero-actions .button-primary {
+  box-shadow: 0 14px 34px rgba(244, 154, 63, .28);
+}
+
+.hero-trust {
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.hero-trust li {
+  padding: 7px 11px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 999px;
+  background: rgba(255,255,255,.045);
+  color: rgba(255,255,255,.79);
+  line-height: 1.25;
+}
+
+.hero-trust li::before {
+  margin-right: 6px;
+}
+
+.hero-panel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 430px;
+  justify-self: end;
+  padding: clamp(27px, 2.2vw, 34px);
+  border-color: rgba(255,255,255,.20);
+  border-radius: 28px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.065), transparent 42%),
+    rgba(4, 25, 44, .60);
+}
+
+.hero-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 22px auto;
+  height: 3px;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: .9;
+}
+
+.hero-panel-label {
+  max-width: 26ch;
+  margin-bottom: 22px;
+  font-size: .88rem;
+  line-height: 1.55;
+}
+
+.hero-panel-grid {
+  gap: 12px;
+}
+
+.hero-panel-grid span {
+  position: relative;
+  min-height: 84px;
+  padding: 16px;
+  overflow: hidden;
+  border-color: rgba(255,255,255,.14);
+  border-radius: 17px;
+  background: rgba(255,255,255,.075);
+  font-size: .94rem;
+  transition: transform .2s ease, background-color .2s ease, border-color .2s ease;
+}
+
+.hero-panel-grid span::after {
+  content: "";
+  position: absolute;
+  width: 42px;
+  aspect-ratio: 1;
+  right: -18px;
+  top: -18px;
+  border: 1px solid rgba(244,154,63,.22);
+  border-radius: 50%;
+}
+
+.hero-panel-grid span:hover {
+  transform: translateY(-2px);
+  border-color: rgba(244,154,63,.35);
+  background: rgba(255,255,255,.10);
+}
+
+.hero-panel > a {
+  width: 100%;
+  margin-top: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1080px) {
+  .hero-content {
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
+    gap: 42px;
+  }
+  .hero h1 { font-size: clamp(3rem, 6vw, 4.75rem); }
+}
+
+@media (max-width: 940px) {
+  .hero-content {
+    width: min(780px, calc(100% - 40px));
+    min-height: auto;
+    padding-block: 72px 88px;
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .hero-copy { max-width: none; }
+  .hero h1 { max-width: 11.5ch; }
+  .hero-panel {
+    max-width: none;
+    justify-self: stretch;
+  }
+  .hero-panel-grid { grid-template-columns: repeat(4, 1fr); }
+  .hero-panel-grid span { min-height: 76px; }
+}
+
+@media (max-width: 700px) {
+  .hero::before { height: 520px; }
+  .hero-content {
+    width: min(100% - 28px, 620px);
+    padding-block: 54px 70px;
+    gap: 38px;
+  }
+  .hero h1 {
+    max-width: 10.5ch;
+    font-size: clamp(2.55rem, 12.2vw, 4rem);
+    line-height: 1.01;
+  }
+  .hero-text {
+    margin-top: 24px;
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+  .hero-actions { margin-top: 28px; }
+  .hero-actions .button { min-width: 0; }
+  .hero-trust {
+    margin-top: 24px;
+    gap: 8px;
+  }
+  .hero-trust li {
+    width: auto;
+    font-size: .82rem;
+  }
+  .hero-panel { border-radius: 22px; }
+  .hero-panel-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 420px) {
+  .hero-content { width: min(100% - 24px, 420px); }
+  .hero h1 { font-size: clamp(2.35rem, 12vw, 3.15rem); }
+  .hero-panel-grid { grid-template-columns: 1fr 1fr; }
+  .hero-panel-grid span { min-height: 68px; }
+}
+
+@media (hover: none) {
+  .hero-panel-grid span:hover { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-panel-grid span { transition: none; }
+}

@@ -1,37 +1,31 @@
 # SERESIDENCIAL APIZACO — Sitio web
 
-**Versión:** 1.5  
-**Sprint:** WEB-05.5.1 — Identidad digital y SEO técnico
+**Versión:** 1.6  
+**Sprint:** WEB-05.6 — Optimización visual del Hero
 
-## Prueba local
+## Objetivo
 
-1. Extraer el paquete completo.
-2. Abrir `index.html` en Chrome.
-3. Confirmar que la pestaña muestre el favicon SRA.
-4. Revisar que el diseño y los enlaces continúen funcionando.
-
-> La imagen Open Graph se muestra al compartir la URL publicada; no aparece al abrir el archivo local.
+Mejorar la presencia, jerarquía y adaptación de la portada principal sin cambiar sus textos, servicios ni funciones.
 
 ## Cambios de esta versión
 
-- Favicon institucional en formatos ICO y PNG.
-- Icono para dispositivos Apple y manifiesto web.
-- Imagen Open Graph de 1200 × 630 px para WhatsApp y redes sociales.
-- Twitter Card de imagen grande.
-- Metadatos SEO ampliados.
-- Datos estructurados Schema.org para el servicio profesional.
-- Sitemap actualizado.
+- Mejor balance entre el mensaje principal y el panel de servicios.
+- Hero adaptado a la altura útil de pantallas grandes sin generar exceso de espacio.
+- Tipografía y anchuras de lectura refinadas para escritorio, tableta y móvil.
+- Botones principales con mayor presencia y separación.
+- Compromisos de servicio presentados como distintivos discretos.
+- Panel lateral refinado con mejor jerarquía, proporción y contraste.
+- Decoración de fondo más controlada para reforzar profundidad sin distraer.
+- Se conserva el encabezado inteligente, favicon, SEO y todos los enlaces existentes.
 
-No se modificaron textos visibles, servicios, diseño, botones ni navegación.
+## Prueba local
+
+1. Abrir `index.html` en Chrome.
+2. Revisar la portada en pantalla completa.
+3. Reducir el ancho de la ventana para validar tableta y móvil.
+4. Desplazarse hacia Servicios para comprobar el encabezado inteligente.
+5. Confirmar que WhatsApp, teléfono, navegación y logotipo continúan funcionando.
 
 ## Publicación
 
-Subir **todo el contenido de esta carpeta** a la raíz del proyecto en GitHub, reemplazando los archivos de la versión anterior. Después de la publicación, compartir la URL para comprobar la vista previa social.
-
-
-## Ajuste WEB-05.5.1
-
-El enlace del logotipo vuelve correctamente al inicio completo de la página sin ocultar el encabezado.
-
-## Versión v1.5.2 — WEB-05.5.1 Encabezado Inteligente
-Esta edición mantiene visible el encabezado y lo compacta al desplazarse. Abra `index.html` y baje hacia Servicios para validar la transición.
+Copiar todo el contenido de esta carpeta sobre el repositorio maestro local, revisar los cambios en GitHub Desktop y publicar con **Commit + Push origin**.
